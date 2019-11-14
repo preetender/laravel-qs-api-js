@@ -1,0 +1,21 @@
+{
+  "name": "laravel-qs-api",
+  "description": "Abstração para trabalhar com consultas elegantes.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "César Auguto",
+    "email": "cesinhagutierres@gmail.com"
+  },
+  "scripts": {
+    "dev": "nodemon --watch src/ --exec ts-node src/index.ts -e ts",
+    "build": "tsc",
+    "prod": "yarn run build && node .dist/index.js"
+  },
+  "dependencies": {
+    "@types/node": "^12.12.7",
+    "nodemon": "^1.19.4",
+    "ts-node": "^8.5.0"
+  }
+}
